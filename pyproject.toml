@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvdoc"
+version = "0.1.0"
+description = "CPU document geometry and controlled OCR evaluation"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.24,<2", "opencv-python-headless>=4.8,<4.12", "Pillow>=10", "pandas>=2", "scipy>=1.10", "matplotlib>=3.7", "PyYAML>=6", "pytesseract>=0.3.10", "jiwer>=3", "tqdm>=4.65", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+report = ["reportlab>=4", "pypdf>=5"]
+
+[project.scripts]
+cvdoc = "cvdoc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cvdoc = ["defaults.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ocr: requires Tesseract", "data: requires downloaded public datasets"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

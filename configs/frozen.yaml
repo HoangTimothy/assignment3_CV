@@ -1,0 +1,46 @@
+approx_epsilon:
+- 0.02
+- 0.01
+- 0.03
+- 0.04
+- 0.05
+bounds_tolerance: 2.0
+canny_fallbacks:
+- - 25
+  - 75
+- - 10
+  - 40
+canny_high: 150
+canny_low: 50
+clahe: false
+closing_kernel: 3
+data_dir: data
+detect_max_side: 1400
+gaussian_kernel: 5
+max_area_ratio: 0.98
+min_angle_degrees: 8
+min_area_ratio: 0.05
+min_edge_ratio: 0.01
+ocr_language: eng
+ocr_padding_min: 2
+ocr_padding_ratio: 0.05
+ocr_page_psm: 3
+ocr_roi_psm: 6
+ocr_scale: 1.0
+ocr_timeout: 30
+ocr_workers: 4
+output_width: 1200
+refine_corridor_max: 12
+refine_corridor_min: 2
+refine_corridor_ratio: 0.01
+refine_gradient_cos: 0.65
+refine_max_shift_ratio: 0.03
+refine_min_support: 20
+results_dir: results
+save_successes: 5
+score_area: 0.45
+score_border_penalty: 0.35
+score_convexity: 0.1
+score_support: 0.45
+seed: 42
+tesseract_cmd: null

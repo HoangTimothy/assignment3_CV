@@ -1,0 +1,11 @@
+{
+  "config_sha256": "76128bebc09d8469b9a488ae81b5856b8744144099fa28874a847374b5b870b0",
+  "source_sha256": "065ee0376f0e26135a8ff790fd5ac409111a69fe4ea767573a982878dce7b5de",
+  "validation_runs": [
+    "results\\20261119T171347826315Z_geometry_baseline_val",
+    "results\\20261119T171401326187Z_geometry_refined_val",
+    "results\\20261119T171358214189Z_ocr_val"
+  ],
+  "rationale": "Retain specified defaults plus fixed lower-Canny fallback for weak edges. No test results were used to select settings. PSM 3/6 and normalization fixed.",
+  "no_test_tuning": true
+}

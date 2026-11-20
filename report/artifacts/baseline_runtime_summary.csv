@@ -1,0 +1,6 @@
+stage,mean_ms
+runtime_ms,71.86261333275372
+preprocess_ms,6.347377500181513
+detect_ms,28.97449499942013
+corners_ms,0.0
+rectify_ms,6.739185455212877

@@ -1,0 +1,125 @@
+[
+  {
+    "directory": "results\\20261119T172246433110Z_geometry_baseline_test",
+    "run": {
+      "kind": "geometry_baseline",
+      "split": "test",
+      "seed": 42,
+      "manifest_sha256": "199a5d2f5bb89c47a64abffd132b8e7f7e9c7c444202e7913533175e2ce50ce4",
+      "config_sha256": "76128bebc09d8469b9a488ae81b5856b8744144099fa28874a847374b5b870b0",
+      "started_utc": "20261119T172246433110Z",
+      "status": "complete",
+      "test_policy": "validation-selected config, no test tuning",
+      "source_sha256": "065ee0376f0e26135a8ff790fd5ac409111a69fe4ea767573a982878dce7b5de",
+      "finished_utc": "2026-11-19T17:22:58.537969+00:00"
+    },
+    "summary": {
+      "track": "SmartDoc native-image geometry",
+      "split": "test",
+      "method": "baseline",
+      "samples": 120,
+      "valid": 55,
+      "failures": 65,
+      "valid_rate": 0.4583333333333333,
+      "conditional_mean_iou": 0.923499375090544,
+      "complete_mean_iou": 0.42327054691649935,
+      "conditional_mean_nce": 0.05776024287461459,
+      "conditional_median_nce": 0.0042219765803489,
+      "conditional_p90_nce": 0.010761873341726581,
+      "success_nce_0.01": 0.4,
+      "success_nce_0.02": 0.425,
+      "success_nce_0.05": 0.425,
+      "mean_runtime_ms": 71.86261333275372,
+      "refinement_fallback_rate": 0.0
+    },
+    "audit": {
+      "coverage": "verified",
+      "geometry_rows": 120,
+      "valid_quads_checked": 55,
+      "config_and_manifest_hashes": "verified"
+    }
+  },
+  {
+    "directory": "results\\20261119T172258558113Z_geometry_refined_test",
+    "run": {
+      "kind": "geometry_refined",
+      "split": "test",
+      "seed": 42,
+      "manifest_sha256": "199a5d2f5bb89c47a64abffd132b8e7f7e9c7c444202e7913533175e2ce50ce4",
+      "config_sha256": "76128bebc09d8469b9a488ae81b5856b8744144099fa28874a847374b5b870b0",
+      "started_utc": "20261119T172258558113Z",
+      "status": "complete",
+      "test_policy": "validation-selected config, no test tuning",
+      "source_sha256": "065ee0376f0e26135a8ff790fd5ac409111a69fe4ea767573a982878dce7b5de",
+      "finished_utc": "2026-11-19T17:23:16.309027+00:00"
+    },
+    "summary": {
+      "track": "SmartDoc native-image geometry",
+      "split": "test",
+      "method": "refined",
+      "samples": 120,
+      "valid": 55,
+      "failures": 65,
+      "valid_rate": 0.4583333333333333,
+      "conditional_mean_iou": 0.9248484663113248,
+      "complete_mean_iou": 0.42388888039269046,
+      "conditional_mean_nce": 0.057602154127492144,
+      "conditional_median_nce": 0.0035364463848481,
+      "conditional_p90_nce": 0.012263705915520381,
+      "success_nce_0.01": 0.375,
+      "success_nce_0.02": 0.425,
+      "success_nce_0.05": 0.425,
+      "mean_runtime_ms": 111.07149583306939,
+      "refinement_fallback_rate": 0.05454545454545454
+    },
+    "audit": {
+      "coverage": "verified",
+      "geometry_rows": 120,
+      "valid_quads_checked": 55,
+      "config_and_manifest_hashes": "verified"
+    }
+  },
+  {
+    "directory": "results\\20261119T172316407276Z_ocr_test",
+    "run": {
+      "kind": "ocr",
+      "split": "test",
+      "seed": 42,
+      "manifest_sha256": "144553c566966947998bab1bee91e82d9f302e42cbbde4bb2032e1dec7db0bbb",
+      "config_sha256": "76128bebc09d8469b9a488ae81b5856b8744144099fa28874a847374b5b870b0",
+      "started_utc": "20261119T172316407276Z",
+      "status": "complete",
+      "test_policy": "validation-selected config, no test tuning",
+      "source_sha256": "065ee0376f0e26135a8ff790fd5ac409111a69fe4ea767573a982878dce7b5de",
+      "finished_utc": "2026-11-19T17:55:05.321736+00:00"
+    },
+    "summary": {
+      "track": "Controlled FUNSD ROI-assisted OCR",
+      "split": "test",
+      "variants": [
+        "frontal",
+        "mild",
+        "strong"
+      ],
+      "documents": 50,
+      "regions": 34050,
+      "failed_region_predictions": 0,
+      "metric_label": "ROI-assisted OCR (dataset text boxes provided)",
+      "excluded_annotations": {
+        "empty_text": 62,
+        "invalid_box": 0,
+        "out_of_page_box": 0
+      },
+      "source_documents": 50
+    },
+    "audit": {
+      "coverage": "verified",
+      "geometry_rows": 300,
+      "valid_quads_checked": 300,
+      "config_and_manifest_hashes": "verified",
+      "ocr_regions": 34050,
+      "exact_annotation_pairing": "verified",
+      "text_edit_counts_and_pooled_aggregates": "verified"
+    }
+  }
+]

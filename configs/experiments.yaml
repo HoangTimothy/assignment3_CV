@@ -1,0 +1,4 @@
+# Fixed E0-E4 branches are defined in cvdoc.experiments.
+seed: 42
+ocr_page_psm: 3
+ocr_roi_psm: 6
